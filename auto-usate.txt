@@ -1,0 +1,21 @@
+id									INT, PRIMARY KEY, AUTO-INCREMENT, NOT NULL, UNIQUE, INDEX		// ID definito dal concessionario				
+numero_telaio						CHAR(17), NOT NULL, UNIQUE										// Codice alfanumerico di 17 cifre
+targa								CHAR(7), NOT NULL, UNIQUE, INDEX								// Codice alfanumerico di 7 cifre
+marca								VARCHAR(20), NOT NULL, INDEX									// Es: Ford
+modello								VARCHAR(50), NOT NULL, INDEX									// Es: Fiesta Titanium TDCi 1.5
+casa_automobilistica				VARCHAR(20), NOT NULL, INDEX									// Es: Ford Motor Company
+anno								YEAR, NOT NULL													// Es: 2015
+colore								VARCHAR(30), NULL, DEFAULT("Altro")								// Es: Grigio Antracite
+km									INT, NOT NULL, DEFAULT("0")										// Es: 100000
+numero_posti						TINYINT, NULL													// Es: 5
+numero_porte						TINYINT, NULL													// Es: 5
+tipo_motore							VARCHAR(20), NOT NULL											// Es: Benzina
+cilindrata							SMALLINT, NULL													// Es: 1200
+cavalli								SMALLINT, NULL													// Es: 80
+data_ultimo_tagliando				DATE, NULL														// Es: 2019-05-05
+data_ultima_revisione				DATE, NULL														// Es: 2019-05-05
+prezzo_al_pubblico					INT, NULL														// Es: 10000
+id_ultimo_proprietario				INT, NOT NULL, DEFAULT("ND")    								// ID definito dal concessionario / ND = NON DEFINITO										
+disponibilita						TINYINT, NOT NULL, DEFAULT(1)									// Es: 0 / 1
+note								TEXT, NULL														
+note_danni							TEXT,NULL														
