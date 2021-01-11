@@ -5,7 +5,7 @@ marca								VARCHAR(20), NOT NULL, INDEX									// Es: Ford
 modello								VARCHAR(50), NOT NULL, INDEX									// Es: Fiesta Titanium TDCi 1.5
 casa_automobilistica				VARCHAR(20), NOT NULL, INDEX									// Es: Ford Motor Company
 anno								YEAR, NOT NULL													// Es: 2015
-colore								VARCHAR(30), NULL, DEFAULT("Altro")								// Es: Grigio Antracite
+colore								VARCHAR(30), NULL												// Es: Grigio Antracite
 km									INT, NOT NULL, DEFAULT("0")										// Es: 100000
 numero_posti						TINYINT, NULL													// Es: 5
 numero_porte						TINYINT, NULL													// Es: 5
